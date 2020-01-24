@@ -1158,8 +1158,9 @@ input, select, textarea {
 /*			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-*/			background-image: url("../../images/Cop_cot-fall.jpg");
+			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;*/			
+			background-image: url("../../images/Cop_cot-fall.jpg");
+			/*background-image: url("https://www.dropbox.com/s/q4uiqoo9h3tkn8m/Cop_cot-fall.JPG?dl=0");*/
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
