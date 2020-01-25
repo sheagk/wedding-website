@@ -7,6 +7,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root {
+  --tin: 0.5s;
+  --tout: 0.5s;
+  --bgin1: 1.25s;
+  --bgin2: 0s;
+  --head1: 1s;
+  --headopac: 0.5s;
+  --head2: 0.05s;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1132,14 +1142,14 @@ input, select, textarea {
 		}
 
 		#bg:before {
-			-moz-transition: background-color 2.5s ease-in-out;
-			-webkit-transition: background-color 2.5s ease-in-out;
-			-ms-transition: background-color 2.5s ease-in-out;
-			transition: background-color 2.5s ease-in-out;
-			-moz-transition-delay: 0.25s;
-			-webkit-transition-delay: 0.25s;
-			-ms-transition-delay: 0.25s;
-			transition-delay: 0.25s;
+			-moz-transition: background-color var(--bgin1) ease-in-out;
+			-webkit-transition: background-color var(--bgin1) ease-in-out;
+			-ms-transition: background-color var(--bgin1) ease-in-out;
+			transition: background-color var(--bgin1) ease-in-out;
+			-moz-transition-delay: var(--bgin2);
+			-webkit-transition-delay: var(--bgin2);
+			-ms-transition-delay: var(--bgin2);
+			transition-delay: var(--bgin2);
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
 			background-size: auto,
  256px 256px;
@@ -1155,12 +1165,11 @@ input, select, textarea {
 			-webkit-transform: scale(1.125);
 			-ms-transform: scale(1.125);
 			transform: scale(1.125);
-/*			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;*/			
+			-moz-transition: -moz-transform 0.15s ease-in-out, -moz-filter 0.25s ease-in-out;
+			-webkit-transition: -webkit-transform 0.15s ease-in-out, -webkit-filter 0.25s ease-in-out;
+			-ms-transition: -ms-transform 0.15s ease-in-out, -ms-filter 0.25s ease-in-out;
+			transition: transform 0.15s ease-in-out, filter 0.25s ease-in-out;			
 			background-image: url("../../images/cop-cot.jpg");
-			/*background-image: url("https://www.dropbox.com/s/q4uiqoo9h3tkn8m/Cop_cot-fall.JPG?dl=0");*/
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1168,14 +1177,19 @@ input, select, textarea {
 		}
 
 		body.is-article-visible #bg:after {
-			-moz-transform: scale(1.0825);
+/*			-moz-transform: scale(1.0825);
 			-webkit-transform: scale(1.0825);
 			-ms-transform: scale(1.0825);
 			transform: scale(1.0825);
-			-moz-filter: blur(0.2rem);
+*/			/*-moz-filter: blur(0.2rem);
 			-webkit-filter: blur(0.2rem);
 			-ms-filter: blur(0.2rem);
-			filter: blur(0.2rem);
+			filter: blur(0.2rem);*/
+/*			-moz-transition: -moz-transform 0.15s ease-in-out, -moz-filter 0.25s ease-in-out;
+			-webkit-transition: -webkit-transform 0.15s ease-in-out, -webkit-filter 0.25s ease-in-out;
+			-ms-transition: -ms-transform 0.15s ease-in-out, -ms-filter 0.25s ease-in-out;
+			transition: transform 0.15s ease-in-out, filter 0.25s ease-in-out;			
+*/
 		}
 
 		body.is-preload #bg:before {
@@ -1575,11 +1589,11 @@ input, select, textarea {
 			}
 
 				#main article .close:before {
-/*					-moz-transition: background-color 0.2s ease-in-out;
+					-moz-transition: background-color 0.2s ease-in-out;
 					-webkit-transition: background-color 0.2s ease-in-out;
 					-ms-transition: background-color 0.2s ease-in-out;
 					transition: background-color 0.2s ease-in-out;
-*/					content: '';
+					content: '';
 					display: block;
 					position: absolute;
 					top: 0.75rem;

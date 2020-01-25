@@ -66,8 +66,9 @@
 			}
 
 	// Main.
-		var	delay = 125,
-			locked = false;
+		var	delay = 0,
+			locked = false,
+			delay2 = 0;
 
 		// Methods.
 			$main._show = function(id, initial) {
@@ -150,7 +151,7 @@
 												locked = false;
 											}, delay);
 
-									}, 25);
+									}, delay2);
 
 							}, delay);
 
@@ -189,7 +190,7 @@
 												locked = false;
 											}, delay);
 
-									}, 25);
+									}, delay2);
 
 							}, delay);
 
@@ -279,7 +280,7 @@
 										locked = false;
 									}, delay);
 
-							}, 25);
+							}, delay2);
 
 					}, delay);
 
