@@ -162,13 +162,13 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+		border-bottom: dashed 1px rgba(255, 255, 255, 0.7);
 		text-decoration: none;
 		color: inherit;
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
+			border-bottom-color: rgba(255, 255, 255, 0.25);
 		}
 
 	strong, b {
@@ -187,7 +187,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-weight: 600;
-		line-height: 1.5;
+		line-height: 1.5em;
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
@@ -215,21 +215,21 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.5rem;
+		font-size: 1.55rem;
 		line-height: 1.4;
 		letter-spacing: 0.5rem;
 	}
 
 	h3 {
-		font-size: 1rem;
+		font-size: 1.25rem;
 	}
 
 	h4 {
-		font-size: 0.8rem;
+		font-size: 1rem;
 	}
 
 	h5 {
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 	}
 
 	h6 {
@@ -1269,8 +1269,8 @@ input, select, textarea {
 /*		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-*/		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;*/		
+		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
@@ -1293,7 +1293,7 @@ input, select, textarea {
 				position: absolute;
 				top: calc(-3.5rem - 1px);
 				left: calc(50% - 1px);
-				width: 1px;
+				width: 0px;
 				height: calc(3.5rem + 1px);
 				background: #ffffff;
 			}
@@ -1324,7 +1324,8 @@ input, select, textarea {
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 			max-width: 100%;
-		}
+			text-shadow: 2px 2px #000000;
+    }
 
 			#header .content .inner {
 				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
@@ -1335,7 +1336,7 @@ input, select, textarea {
 				-webkit-transition-delay: 0.1s;
 				-ms-transition-delay: 0.1s;
 				transition-delay: 0.1s;
-				padding: 3rem 2rem;
+				padding: 3rem 2.5rem;
 				max-height: 40rem;
 				overflow: hidden;
 			}
@@ -1347,7 +1348,7 @@ input, select, textarea {
 			#header .content p {
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
+				font-size: 1rem;
 				line-height: 2;
 			}
 
@@ -1380,8 +1381,11 @@ input, select, textarea {
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					font-size: 1.2rem;
+					font-weight: 500;
+					text-shadow: 1px 1px #000000;
 					border-bottom: 0;
+					background-color: rgba(0, 0, 0, 0.5)
 				}
 
 					#header nav ul li a:hover {
